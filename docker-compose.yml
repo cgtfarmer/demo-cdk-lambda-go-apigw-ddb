@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    image: golang:1.22.5
+    environment:
+      GO111MODULE: on
+    tty: true
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
